@@ -12,7 +12,7 @@ enum MOTORS {
   RIGHT_MOTOR,
   BOTH_MOTOR
 };
-enum DIRECTION {
+enum MOTORS_DIRECTION {
   FORWARD,
   BACKWARD,
   STOP
@@ -20,3 +20,4 @@ enum DIRECTION {
 
 void initMotorsPinout(void);
 void setMotor(uint8_t motor, uint8_t dir, uint8_t pwm);
+void stopMotors(void);

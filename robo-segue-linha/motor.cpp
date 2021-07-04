@@ -6,6 +6,7 @@ void initMotorsPinout(void){
   pinMode(EN_RIGHT_MOTOR_Pin, OUTPUT);
   pinMode(RIGHT_MOTOR_FORWARD_Pin, OUTPUT);
   pinMode(RIGHT_MOTOR_BACKWARD_Pin, OUTPUT);
+  stopMotors();
 }
 
 void setMotor(uint8_t motor, uint8_t dir, uint8_t pwm){
@@ -47,4 +48,8 @@ void setMotor(uint8_t motor, uint8_t dir, uint8_t pwm){
     setMotor(LEFT_MOTOR, dir, pwm);
     setMotor(RIGHT_MOTOR, dir, pwm);
   }
+}
+
+void stopMotors(void){
+  setMotor(BOTH_MOTOR, 0, 0);
 }

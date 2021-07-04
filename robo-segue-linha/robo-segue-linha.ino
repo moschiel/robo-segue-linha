@@ -1,17 +1,15 @@
 #include "motor.h"
+#include "follow_line_control.h"
 
 void setup() {
   // put your setup code here, to run once:
-
-
   initMotorsPinout();
-  //while(1);
+  initFollowLineControlPinout();
   Serial.begin(9600);
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
-  setMotor(BOTH_MOTOR, FORWARD, 70);
-  //setMotor(RIGHT_MOTOR, FORWARD, 70); 
+  //Serial.println(String(digitalRead(A0)) + ", " + digitalRead(A1) + ", " + digitalRead(A2));
+  followLineControl();
 }
