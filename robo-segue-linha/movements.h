@@ -3,6 +3,7 @@
 enum MOVEMENTS {
   MOV_STOP,                 //para
   MOV_FORWARD,              //frente
+  MOV_BACKWARD,              //frente
   MOV_TURN_LEFT_WEAK,       //giro leve a esqueda
   MOV_TURN_LEFT_MEDIUM,     //giro medio a esquerda
   MOV_TURN_LEFT_HARD,       //giro forte a esquerda

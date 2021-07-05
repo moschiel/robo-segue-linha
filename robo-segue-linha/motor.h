@@ -13,9 +13,9 @@ enum MOTORS {
   BOTH_MOTOR
 };
 enum MOTORS_DIRECTION {
-  FORWARD,
-  BACKWARD,
-  STOP
+  FORWARD_MOTOR,
+  BACKWARD_MOTOR,
+  STOP_MOTOR
 };
 
 void initMotorsPinout(void);
